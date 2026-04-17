@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.laboratory.management.system.exceptions;
 
 public class DataNotFoundException extends RuntimeException {
@@ -23,3 +24,30 @@ public class DataNotFoundException extends RuntimeException {
     }
 }
 
+=======
+package com.laboratory.management.system.exceptions;
+
+public class DataNotFoundException extends RuntimeException {
+
+    public DataNotFoundException() {
+        super();
+    }
+
+    public DataNotFoundException(String message) {
+        super(message);
+    }
+
+    public DataNotFoundException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public DataNotFoundException(Throwable cause) {
+        super(cause);
+    }
+
+    protected DataNotFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
+}
+
+>>>>>>> e4e22ab (Initial commit)

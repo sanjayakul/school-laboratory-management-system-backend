@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 databaseChangeLog:
   - include:
       file: classpath:/mysql/chemical_inventory_details.yml
@@ -5,3 +6,12 @@ databaseChangeLog:
       file: classpath:/mysql/users.yml
   - include:
       file: classpath:/mysql/equipment_inventory.yml
+=======
+databaseChangeLog:
+  - include:
+      file: classpath:/mysql/chemical_inventory_details.yml
+  - include:
+      file: classpath:/mysql/users.yml
+  - include:
+      file: classpath:/mysql/equipment_inventory.yml
+>>>>>>> e4e22ab (Initial commit)
