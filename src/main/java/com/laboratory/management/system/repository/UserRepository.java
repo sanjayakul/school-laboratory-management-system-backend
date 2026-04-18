@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.laboratory.management.system.repository;
 
 import com.laboratory.management.system.model.User;
@@ -13,21 +12,3 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
 
     boolean existsByUsernameIgnoreCase(String username);
 }
-
-=======
-package com.laboratory.management.system.repository;
-
-import com.laboratory.management.system.model.User;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificationExecutor<User> {
-
-    boolean existsByEmailIgnoreCase(String email);
-
-    boolean existsByUsernameIgnoreCase(String username);
-}
-
->>>>>>> e4e22ab (Initial commit)
