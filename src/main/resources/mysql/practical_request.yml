@@ -1,0 +1,156 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: copilot
+      changes:
+        - createTable:
+            tableName: practical_request
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT AUTO_INCREMENT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: subject
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: grade
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: class_section
+                  type: VARCHAR(100)
+
+              - column:
+                  name: practical_date
+                  type: DATE
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: term
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: laboratorian
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: student_count
+                  type: INT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: expected_attendance
+                  type: INT
+
+              - column:
+                  name: experiment_name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: experiment_type
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: syllabus_mandated
+                  type: BOOLEAN
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: additional_notes
+                  type: VARCHAR(1000)
+
+              - column:
+                  name: status
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: created_date
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: created_user
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: modified_date
+                  type: TIMESTAMP
+
+              - column:
+                  name: modified_user
+                  type: VARCHAR(100)
+
+  - changeSet:
+      id: 2
+      author: copilot
+      changes:
+        - createTable:
+            tableName: practical_request_item
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT AUTO_INCREMENT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: practical_request_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: item_type
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: item_name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: required_volume
+                  type: DECIMAL(10,2)
+
+              - column:
+                  name: unit
+                  type: VARCHAR(20)
+
+        - addForeignKeyConstraint:
+            baseTableName: practical_request_item
+            baseColumnNames: practical_request_id
+            referencedTableName: practical_request
+            referencedColumnNames: id
+            onDelete: CASCADE
+            constraintName: fk_practical_request_item_request

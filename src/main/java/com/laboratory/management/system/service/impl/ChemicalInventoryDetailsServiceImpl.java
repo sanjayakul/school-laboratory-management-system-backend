@@ -80,3 +80,4 @@ public class ChemicalInventoryDetailsServiceImpl implements ChemicalInventoryDet
         return chemicalInventoryDetailsDtos;
     }
 }
+

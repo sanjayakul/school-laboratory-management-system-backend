@@ -5,3 +5,9 @@ databaseChangeLog:
       file: classpath:/mysql/users.yml
   - include:
       file: classpath:/mysql/equipment_inventory.yml
+  - include:
+      file: classpath:/mysql/budget_category.yml
+  - include:
+      file: classpath:/mysql/budget_expense.yml
+  - include:
+      file: classpath:/mysql/practical_request.yml

@@ -8,5 +8,7 @@ import org.springframework.data.domain.Pageable;
 public interface ChemicalInventoryDetailsService {
 
     ChemicalInventoryDetailsDto createChemicalInventoryDetails(ChemicalInventoryDetailsDto dto);
+
     Page<ChemicalInventoryDetailsDto> findChemicalInventoryDetailsByFilters(ChemicalInventoryDetailsCriteria criteria, Pageable pageable);
 }
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="color-scheme" content="light only">
+    <meta name="supported-color-schemes" content="light only">
+    <style>
+        @media (prefers-color-scheme: dark) {
+            .dark-bg { background-color: #0f172a !important; }
+            .dark-card { background-color: #1e293b !important; }
+            .dark-section { background-color: #020617 !important; }
+        }
+    </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#0f172a; font-family:Arial, sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0f172a" class="dark-bg" style="padding:40px 20px;">
+    <tr>
+        <td align="center">
+
+            <!-- Main Container -->
+            <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#1e293b" class="dark-card"
+                   style="max-width:650px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.6);">
+
+                <tr>
+                    <td style="padding:40px 30px;">
+
+                        <!-- Header -->
+                        <div style="text-align:center; margin-bottom:25px;">
+                            <img src="cid:logo" alt="LabSyncLite Logo"
+                                 style="max-width:140px; height:auto; margin-bottom:10px;">
+
+                            <h2 style="color:#e2e8f0; margin:10px 0 5px 0;">
+                                LabSyncLite
+                            </h2>
+
+                            <p style="color:#94a3b8; font-size:13px; margin:0;">
+                                School Laboratory Management System
+                            </p>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 style="color:#38bdf8; text-align:center; margin-bottom:20px;">
+                            Account Successfully Created
+                        </h3>
+
+                        <!-- Greeting -->
+                        <p style="color:#e2e8f0; font-size:15px;">
+                            Dear {{USER_NAME}},
+                        </p>
+
+                        <!-- Intro -->
+                        <p style="color:#cbd5f5; font-size:14px; line-height:1.6;">
+                            We are pleased to inform you that your account has been successfully created in the
+                            <strong>LabSyncLite School Laboratory Management System</strong>.
+                            Please find your account details below.
+                        </p>
+
+                        <!-- Account Details -->
+                        <div class="dark-section"
+                             style="border-radius:8px; padding:20px; margin:25px 0; border-left:4px solid #38bdf8;">
+
+                            <h4 style="color:#38bdf8; margin-bottom:15px;">
+                                Account Information
+                            </h4>
+
+                            <table width="100%" cellpadding="6" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="color:#94a3b8;">Username</td>
+                                    <td style="color:#e2e8f0; text-align:right;"><strong>{{USERNAME}}</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#94a3b8;">Email</td>
+                                    <td style="color:#e2e8f0; text-align:right;">{{EMAIL}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#94a3b8;">Temporary Password</td>
+                                    <td style="color:#38bdf8; text-align:right;"><strong>{{PASSWORD}}</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#94a3b8;">Role</td>
+                                    <td style="color:#e2e8f0; text-align:right;">{{ROLE}}</td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#94a3b8;">Department</td>
+                                    <td style="color:#e2e8f0; text-align:right;">{{DEPARTMENT}}</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- Security Notice -->
+                        <p style="color:#facc15; font-size:13px; line-height:1.5;">
+                            For security purposes, please log in and change your password immediately after your first login.
+                        </p>
+
+                        <!-- Footer -->
+                        <p style="margin-top:30px; font-size:14px; color:#e2e8f0;">
+                            Regards,<br>
+                            <strong style="color:#38bdf8;">LabSyncLite Administration</strong><br>
+                            <span style="font-size:12px; color:#94a3b8;">
+                                School Laboratory Management System
+                            </span>
+                        </p>
+
+                        <!-- Divider -->
+                        <hr style="border:none; border-top:1px solid #334155; margin:25px 0;">
+
+                        <!-- Disclaimer -->
+                        <p style="font-size:11px; color:#64748b; text-align:center;">
+                            This is an automated message. Please do not reply to this email.
+                        </p>
+
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
